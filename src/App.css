@@ -1,0 +1,107 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #34495e;
+  margin-top: 20px;
+  font-size: 2.5em;
+}
+
+h3 {
+  color: #2c3e50;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Dashboard Container */
+div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Date Range Selector */
+.date-range-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.date-range-container h3 {
+  margin-right: 10px;
+}
+
+.react-datepicker-wrapper {
+  margin: 0 10px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Charts Container */
+.chart-container {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.apexcharts-canvas {
+  margin-top: 20px;
+}
+
+.apexcharts-tooltip {
+  background: #2c3e50 !important;
+  color: white !important;
+}
+
+/* Responsive Layout */
+@media only screen and (max-width: 768px) {
+  div {
+    padding: 10px;
+  }
+
+  .date-range-container {
+    flex-direction: column;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+
+  .chart-container {
+    margin-bottom: 15px;
+  }
+}
+
+/* Loading and Error Styles */
+.loading,
+.error {
+  text-align: center;
+  color: #e74c3c;
+  font-size: 1.2em;
+}
